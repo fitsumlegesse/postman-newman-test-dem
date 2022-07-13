@@ -1,56 +1,51 @@
 {
-	"info": {
-		"_postman_id": "dd95e8bb-a43a-4b43-9a53-7f11293be928",
-		"name": "demo-mdvip-ghactions",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "18348324"
-	},
-	"item": [
-		{
-			"name": "New Request",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"var jsonData = pm.response.json();\r",
-							"\r",
-							"\r",
-							"pm.test(\"Response should contain id: 5687785632\", function () {\r",
-							"    pm.expect(jsonData).to.have.property(\"id\",5687785632);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Response should contain name: Fitsum Legesse\", function () {\r",
-							"    pm.expect(jsonData).to.have.property(\"name\",\"Fitsum Legesse\");\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Response should contain age: 25\", function () {\r",
-							"    pm.expect(jsonData).to.have.property(\"age\",\"25\");\r",
-							"});\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/api/home",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"home"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "dd95e8bb-a43a-4b43-9a53-7f11293be928",
+    "name": "demo-mdvip-ghactions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "18348324"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();\r",
+              "\r",
+              "\r",
+              "pm.test(\"Response should contain id: 5687785632\", function () {\r",
+              "    pm.expect(jsonData).to.have.property(\"id\",5687785632);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response should contain name: Fitsum Legesse\", function () {\r",
+              "    pm.expect(jsonData).to.have.property(\"name\",\"Fitsum Legesse\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response should contain age: 25\", function () {\r",
+              "    pm.expect(jsonData).to.have.property(\"age\",\"25\");\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/home",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "home"]
+        }
+      },
+      "response": []
+    }
+  ]
 }

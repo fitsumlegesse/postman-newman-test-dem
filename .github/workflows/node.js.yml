@@ -31,8 +31,5 @@ jobs:
     - name: install newman
       run: npm install -g newman
     - name: Run the API and Postman's tests
-      run: | 
-        npm start &
-        sleep 60
-        newman run "postman-coll.json"
+      run: npm start
       
