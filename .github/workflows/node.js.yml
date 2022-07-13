@@ -16,8 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: 16.x
 
     steps:
     - uses: actions/checkout@v3
@@ -35,6 +34,6 @@ jobs:
     - name: Run the API and Postman's tests
       run: | 
         npm start &
-        sleep 60
-        newman run "test/postman-coll.json" -r htmlextra --reporter-htmlextra-export "testResults/htmlreport.html" --reporter-htmlextra-darkTheme  > "testResults/runreport1.html"
+        sleep 30
+        newman run "test/postman-coll.json" -r htmlextra --reporter-htmlextra-export "postman-newman-test-dem/testResults/htmlreport.html" --reporter-htmlextra-darkTheme
       
