@@ -27,7 +27,7 @@ jobs:
         cache: 'npm'
     - name: Insall dependencies
       run: npm install 
-    - name: install newman & newman reporter
+    - name: Install newman & newman reporter
       run: | 
         npm install -g newman
         npm install -g newman-reporter-junitfull
