@@ -31,11 +31,12 @@ jobs:
       run: | 
         npm install -g newman
         npm install -g newman-reporter-junitfull
-    - name: Run the API and test it aganist the postman collection 
+    - name: Start up the API 
       run: | 
         npm start &
-        sleep 60
-        newman run "test/postman-coll.json" -r junitfull --reporter-junitfull-export 'newman/result.xml' -n 2
+        sleep 75
+    - name: Run the postman test aganist the api
+      run: newman run "test/postman-coll.json" -r junitfull --reporter-junitfull-export 'newman/result.xml' -n 2
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1
       if: always()
