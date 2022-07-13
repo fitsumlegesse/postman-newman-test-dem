@@ -27,13 +27,12 @@ jobs:
         cache: 'npm'
     - name: Insall dependencies
       run: npm install 
-    - name: install newman
+    - name: install newman & newman reporter
       run: | 
         npm install -g newman
-        npm install -g newman-reporter-htmlextra
-    - name: Run the API and Postman's tests
+        npm install -g newman-reporter-junitfull
+    - name: Run the API and test it aganist the postman collection 
       run: | 
         npm start &
         sleep 30
-        newman run "test/postman-coll.json" -r htmlextra --reporter-htmlextra-export "postman-newman-test-demo/testResults/htmlreport.html" --reporter-htmlextra-darkTheme
-      
+        newman run "test/postman-coll.json" -r junitfull  -n 2
