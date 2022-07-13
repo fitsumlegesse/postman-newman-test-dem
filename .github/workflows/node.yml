@@ -35,5 +35,5 @@ jobs:
       run: | 
         npm start &
         sleep 30
-        newman run "test/postman-coll.json" -r htmlextra --reporter-htmlextra-export "testResults/htmlreport.html" --reporter-htmlextra-darkTheme
+        newman run "test/postman-coll.json" -r htmlextra --reporter-htmlextra-export "postman-newman-test-demo/testResults/htmlreport.html" --reporter-htmlextra-darkTheme
       
