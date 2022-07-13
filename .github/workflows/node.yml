@@ -42,3 +42,5 @@ jobs:
       if: always()
       with:
         files: "newman/**/*.xml"
+    - name: Build It
+      run: npm build 
