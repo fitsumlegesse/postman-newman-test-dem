@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" hostname="http://localhost" package="" name="New Request" tests="3" failures="0" errors="0" timestamp="2022-07-13T01:32:10.012" time="0.050">
+    <testcase classname=" / New Request" name="Response should contain id: 5687785632" time="0.017"/>
+    <testcase classname=" / New Request" name="Response should contain name: Fitsum Legesse" time="0.017"/>
+    <testcase classname=" / New Request" name="Response should contain age: 25" time="0.017"/>
+  </testsuite>
+  <testsuite id="1" hostname="http://localhost" package="" name="New Request" tests="3" failures="0" errors="0" timestamp="2022-07-13T01:32:10.062" time="0.006">
+    <testcase classname=" / New Request" name="Response should contain id: 5687785632" time="0.002"/>
+    <testcase classname=" / New Request" name="Response should contain name: Fitsum Legesse" time="0.002"/>
+    <testcase classname=" / New Request" name="Response should contain age: 25" time="0.002"/>
+  </testsuite>
+</testsuites>
