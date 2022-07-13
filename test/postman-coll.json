@@ -24,8 +24,8 @@
               "    pm.expect(jsonData).to.have.property(\"name\",\"Fitsum Legesse\");\r",
               "});\r",
               "\r",
-              "pm.test(\"Response should contain age: 24\", function () {\r",
-              "    pm.expect(jsonData).to.have.property(\"age\",\"25\");\r",
+              "pm.test(\"Response should contain age: 25\", function () {\r",
+              "    pm.expect(jsonData).to.have.property(\"age\",\"24\");\r",
               "});\r",
               "\r",
               ""
