@@ -1,6 +1,6 @@
 import express from 'express'
 
-import {register} from '../controllers/auth';
+import {register, somedata} from '../controllers/auth';
 
 const router = express.Router()
 
@@ -13,6 +13,7 @@ const router = express.Router()
 */
 
 router.post("/register", register)
+router.get("/home", somedata )
 
 
 

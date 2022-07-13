@@ -36,3 +36,18 @@ export const register = async (req,res)=>{
         return res.status(400).send("Error. Try again")
     }
 }
+
+export const somedata = async (req,res)=>{
+    const responseData = {
+        id:5687785632,
+        name: "Fitsum Legesse",
+        age: "25",
+        role: "Consultant I",
+        resportsTo: "Mike T",
+        office: "PNW"
+    }
+     
+    const jsonContent = JSON.stringify(responseData);
+    res.end(jsonContent);
+  };
+
