@@ -34,7 +34,7 @@ jobs:
     - name: Run the API and test it aganist the postman collection 
       run: | 
         npm start &
-        sleep 30
+        sleep 60
         newman run "test/postman-coll.json" -r junitfull --reporter-junitfull-export 'newman/result.xml' -n 2
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1
