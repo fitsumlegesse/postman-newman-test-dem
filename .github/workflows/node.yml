@@ -43,4 +43,4 @@ jobs:
       with:
         files: "newman/**/*.xml"
     - name: Build It
-      run: npm build 
+      run: node build 
